@@ -16,8 +16,11 @@ user = input("Enter word/s: ")
 for x in user:
     if x in upper:
         result = True
+    elif x.isalnum():
+        result = False
+        break
     else:
         result = False
         break
 
-print(result)
+print(f"The string is in capital letters? {result}")
