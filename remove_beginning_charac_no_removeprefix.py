@@ -9,3 +9,5 @@ use for loop to remove characs
 print output
 """
 
+user = input("Enter word/s: ")
+print(user.removeprefix("ONE"))
