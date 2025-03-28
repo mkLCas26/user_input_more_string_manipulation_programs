@@ -4,6 +4,14 @@
 PSEUDOCODE
 
 user input
-use other function to execute lstrip()
+use for loop to eliminate space
 print output
 """
+
+user = input("Enter word/s: ")
+
+for x in user:
+    if x == " ":
+        continue
+    else:
+        print(user[x:])
