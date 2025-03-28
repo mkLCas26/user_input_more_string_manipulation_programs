@@ -23,6 +23,8 @@ lower = ""
 
 for letter in user:
     if letter in convert:
+        lower += convert[letter]
+    else: 
         lower += letter
 
 print(lower)
