@@ -14,9 +14,9 @@ result = ""
 user = input("Enter word/s: ")
 
 for x in user:
-    if x in upper:
+    if x in upper or x == " ":
         result = True
-    elif x.isalnum():
+    elif x.isalnum(): 
         result = False
         break
     else:
