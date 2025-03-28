@@ -24,5 +24,6 @@ lower = ""
 for letter in user:
     if letter in convert:
         lower += letter
-        print(lower)
+
+print(lower)
         
