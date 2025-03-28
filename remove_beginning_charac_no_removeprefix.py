@@ -5,9 +5,10 @@
 PSEUDOCODE
 
 user input
+ask for a charac to be removed 
 use for loop to remove characs
 print output
 """
 
 user = input("Enter word/s: ")
-print(user.removeprefix("ONE"))
+
