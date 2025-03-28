@@ -4,4 +4,6 @@
 PSEUDOCODE
 
 user input
+use other function to execute lstrip()
+print output
 """
