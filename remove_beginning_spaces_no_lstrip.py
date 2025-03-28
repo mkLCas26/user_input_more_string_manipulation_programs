@@ -8,10 +8,13 @@ use for loop to eliminate space
 print output
 """
 
+index = 0
 user = input("Enter word/s: ")
 
 for x in user:
     if x == " ":
-        continue
+        index += 1
     else:
-        print(user[x:])
+        break
+
+print(user[index:])
