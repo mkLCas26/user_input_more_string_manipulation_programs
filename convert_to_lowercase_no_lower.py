@@ -3,8 +3,13 @@
 """
 PSEUDOCODE
 
+establish alphabet dictionary
 user input
-checking if input is in lowercase
-converting input to lowercase
-print output
+for loop: checking if input is in lowercase
+    converting input to lowercase
+    print output
 """
+
+
+user = input("Enter word/s: ")
+
