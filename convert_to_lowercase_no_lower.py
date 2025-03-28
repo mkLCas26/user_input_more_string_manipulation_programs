@@ -19,4 +19,10 @@ convert = {
 }
 
 user = input("Enter word/s: ")
+lower = ""
 
+for letter in user:
+    if letter in convert:
+        lower += letter
+        print(lower)
+        
