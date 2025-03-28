@@ -1,0 +1,1 @@
+# B6 Convert all characters into lowercase w/o .lower() func
