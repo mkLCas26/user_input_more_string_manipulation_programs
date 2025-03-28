@@ -5,7 +5,7 @@
 PSEUDOCODE
 
 user input
-ask length wanted by the user
+ask length wanted by the user (if statement)
 print string
 """
 
