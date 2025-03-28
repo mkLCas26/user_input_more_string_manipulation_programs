@@ -6,9 +6,14 @@ PSEUDOCODE
 
 user input
 ask for a charac to be removed 
-use for loop to remove characs
+use if statement and .startswith() func
 print output
 """
 
 user = input("Enter word/s: ")
+rem = input("Characters you want to remove: ")
 
+if user.startswith(rem):
+    remlength = len(rem)
+    user = user[remlength:]
+    print(user)
