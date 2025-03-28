@@ -9,12 +9,14 @@ ask user how long do they want the string to be
 print output
 """
 
+left = 0
+right = 0 
 user = input("Enter word/s: ")
 width = int(input("How long do you want the string to be? "))
-width -= len(user)
 
 if len(user) < width:
-   left = width // 2
-   right = width - left
+    width -= len(user)
+    left = width // 2
+    right = width - left
 
-print(f"{' ' * left}{user}{' ' * right}")
+print(f"'{' ' * left}{user}{' ' * right}'")
