@@ -7,3 +7,17 @@ user input
 for loop for checking if charac is uppercase
 print true or false
 """
+
+upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+result = ""
+
+user = input("Enter word/s: ")
+
+for x in user:
+    if x in upper:
+        result = True
+    else:
+        result = False
+        break
+
+print(result)
