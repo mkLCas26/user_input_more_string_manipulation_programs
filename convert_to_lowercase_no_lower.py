@@ -1,4 +1,4 @@
-# B6 Convert all characters into lowercase w/o .lower() func
+# B6 Prog03. Convert all characters into lowercase w/o .lower() func
 
 """
 PSEUDOCODE
