@@ -29,11 +29,3 @@ for key, letter in enumerate(user):
         final += letter.lower()
     
 print(final)
-    
-# for x in words[0]:
-#     if x in to_upper:
-#         final += to_upper[x]
-#         words[0][1:].lower
-        
-        
-# print(final)
