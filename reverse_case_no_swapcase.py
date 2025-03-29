@@ -29,7 +29,7 @@ user = input("Enter word/s: ")
 to_upper = {}
 swap = ""
 
-for key, value in to_lower:
+for key, value in to_lower.items():
     to_upper[value] = key
 
 # for letter in user:
