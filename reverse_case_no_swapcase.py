@@ -25,4 +25,15 @@ to_upper = {
     "y": "Y", "z": "Z"
 }
 
-user = input("Enter word/s")
+user = input("Enter word/s: ")
+swap = ""
+
+for letter in user:
+    if letter in to_lower:
+        swap += to_lower[letter]
+    elif letter in to_upper:
+        swap += to_upper[letter]
+    else:
+        swap += letter                    # for spaces and other unique characters
+        
+print(swap)
