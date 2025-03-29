@@ -17,7 +17,23 @@ to_upper = {
      "m": "M", "n": "N", "o": "O", "p": "P", "q": "Q", "r": "R",
      "s": "S", "t": "T", "u": "U", "v": "V", "w": "W", "x": "X",
      "y": "Y", "z": "Z"
- }
+}
 
 user = input("Enter word/s: ")
+final = ""
 
+for key, letter in enumerate(user):
+    if key == 0 and letter in to_upper:
+        final += to_upper[letter]
+    else: 
+        final += letter.lower()
+    
+print(final)
+    
+# for x in words[0]:
+#     if x in to_upper:
+#         final += to_upper[x]
+#         words[0][1:].lower
+        
+        
+# print(final)
