@@ -14,11 +14,9 @@ user = input("Enter word/s: ")
 
 
 for letter in user:
-    if letter in lower or letter == " ":
+    if letter.isalpha() and letter in lower:
         result = True
-    elif letter.isalnum():
-        result = False
-    else: 
+    else:
         result = False
 
 print(f"The string is in lowercase? {result}")
