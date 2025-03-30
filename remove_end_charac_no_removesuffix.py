@@ -1,0 +1,1 @@
+# B7 Prog02. Remove characs at the end of string w/o removesuffix()
