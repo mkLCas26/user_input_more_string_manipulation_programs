@@ -16,4 +16,6 @@ rem = input("Characters you want to remove: ")
 if user.startswith(rem):
     remlength = len(rem)
     user = user[remlength:]
-    print(user)
+    print(f"'{user}'")
+else:
+    print(f"ERROR!'{rem}' can't be found at the beginning of your string.")
