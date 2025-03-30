@@ -24,7 +24,7 @@ title_case = ""
 
 for key, letter in enumerate(user):
      if key == 0 or user[key - 1] == " ":
-          title_case += to_upper[letter]
+          title_case += to_upper.get(letter, letter)
      elif letter == " ":
           title_case += letter
      else:
