@@ -9,3 +9,24 @@ loop to check if characs are in uppercase
     convert if in lowercase
 print
 """
+
+to_upper = {
+     "a": "A", "b": "B", "c": "C", "d": "D", "e": "E", "f": "F",
+     "g": "G", "h": "H", "i": "I", "j": "J", "k": "K", "l": "L",
+     "m": "M", "n": "N", "o": "O", "p": "P", "q": "Q", "r": "R",
+     "s": "S", "t": "T", "u": "U", "v": "V", "w": "W", "x": "X",
+     "y": "Y", "z": "Z"
+}
+
+user = input("Enter word/s: ")
+upper = ""
+
+for letter in user:
+    if letter in to_upper:
+        upper += to_upper[letter]
+    elif letter == " ":
+        upper += letter
+    else:
+        upper += to_upper[letter]
+
+print(upper)
