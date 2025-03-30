@@ -24,9 +24,7 @@ upper = ""
 for letter in user:
     if letter in to_upper:
         upper += to_upper[letter]
-    elif letter == " ":
-        upper += letter
     else:
-        upper += to_upper[letter]
+        upper += letter
 
 print(upper)
