@@ -17,4 +17,4 @@ for x in user:
     else:
         break
 
-print(user[index:])
+print(f"'{user[index:]}'")
