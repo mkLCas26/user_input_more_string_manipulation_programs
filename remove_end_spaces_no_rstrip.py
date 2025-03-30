@@ -8,10 +8,11 @@ loop to remove spaces in the end
 print output
 """
 
-index = 0
-user = input("Enter word/s: ")
 
-for x in user:
+user = input("Enter word/s: ")
+index = 0
+
+for x in user[::-1]:
     if x == " ":
         index -= 1
     else:
