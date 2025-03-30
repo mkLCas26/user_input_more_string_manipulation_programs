@@ -23,9 +23,11 @@ user = input("Enter word/s: ")
 title_case = ""
 
 for key, letter in enumerate(user):
-     if key == 0 and user[key - 1] == " ":
+     if key == 0 or user[key - 1] == " ":
           title_case += to_upper[letter]
      elif letter == " ":
           title_case += letter
      else:
           title_case += letter.lower()
+          
+print(title_case)
