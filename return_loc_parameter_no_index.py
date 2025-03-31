@@ -13,6 +13,6 @@ user = input("Enter word/s: ")
 parameter = input("Character/word to know the index in your input: ")
 
 for letter in range(len(user) - len(parameter) + 1):
-    if user[letter: letter + len(parameter)]:
+    if user[letter: letter + len(parameter)] == parameter:
         print(f"Index is: {letter}")
         break
