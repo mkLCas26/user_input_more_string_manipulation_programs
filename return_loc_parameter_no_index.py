@@ -10,8 +10,9 @@ find parameter's loc
 print index
 """
 user = input("Enter word/s: ")
-parameter = input("\nCharacter/word to know the index in your input: ")
+parameter = input("Character/word to know the index in your input: ")
 
-for key, value in enumerate(user):
-    if parameter == value:
-        print(key)
+for letter in range(len(user) - len(parameter) + 1):
+    if user[letter: letter + len(parameter)]:
+        print(f"Index is: {letter}")
+        break
