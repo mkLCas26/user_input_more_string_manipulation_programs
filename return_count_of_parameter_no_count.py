@@ -9,3 +9,15 @@ ask the word/s user wants to count
 determining the count of the parameter
 print count
 """
+
+user = input("Enter word/s: ").split()
+parameter = input("\nCharacter/word to count in your input: ")
+store = []
+
+for word in user:
+    if word == parameter:
+        store.append(parameter)
+    else:
+        continue
+
+print(len(store))
