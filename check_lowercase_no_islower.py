@@ -8,15 +8,18 @@ check if characs are in lower case
 print
 """
 
-lower = "abcdefghijklmnop"
+lower = "abcdefghijklmnopqrstuvwxyz"
 result = ""
 user = input("Enter word/s: ")
 
 
 for letter in user:
-    if letter.isalpha() and letter in lower:
+    if letter in lower or letter == " ":
         result = True
-    else:
+    elif not letter.isalpha():
+        continue
+    else: 
         result = False
+        break
 
 print(f"The string is in lowercase? {result}")
