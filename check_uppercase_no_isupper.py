@@ -13,12 +13,11 @@ result = ""
 
 user = input("Enter word/s: ")
 
-for x in user:
-    if x in upper or x == " ":
+for letter in user:
+    if letter in upper or letter == " ":
         result = True
-    elif x.isalnum(): 
-        result = False
-        break
+    elif not letter.isalpha(): 
+        continue
     else:
         result = False
         break
